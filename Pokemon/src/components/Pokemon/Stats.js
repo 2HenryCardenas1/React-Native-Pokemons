@@ -5,7 +5,7 @@ import { capitalize } from 'lodash';
 
 export default function Stats(props) {
     const { stats } = props;
-    console.log(props);
+   
 
     const barStyles = (num) => {
         const color = num > 49 ? "green" : "red";
@@ -43,8 +43,7 @@ const styles = StyleSheet.create({
     },
     title: {
         fontWeight: 'bold',
-        fontSize: 20,
-        fontBottom: 5
+        fontSize: 20
     },
     block: {
         flexDirection: 'row',

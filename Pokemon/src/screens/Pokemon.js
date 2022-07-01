@@ -34,7 +34,7 @@ export default function Pokemon(props) {
   }, [params])
 
   if (!pokemon) return null
- console.log(pokemon)
+ //console.log(pokemon)
   return (
     <ScrollView>
       <Header name={pokemon.name} order={pokemon.order} image={pokemon.sprites.other["official-artwork"].front_default} type={pokemon.types[0].type.name} />
