@@ -8,4 +8,4 @@ export const userDetails = {
     first_name : 'John',
     last_name : 'Doe',
     email : 'john@example.com'
-}
+};

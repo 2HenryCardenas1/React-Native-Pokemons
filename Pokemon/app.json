@@ -22,6 +22,7 @@
       "bundleIdentifier": "Pokemon"
     },
     "android": {
+      "package": "H3C4.pokelist",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"

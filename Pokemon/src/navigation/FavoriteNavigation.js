@@ -1,7 +1,7 @@
 import React from 'react'
 import {createStackNavigator} from "@react-navigation/stack"
 import FavoriteScreen from "../screens/Favorite"
-
+import PokemonScreen from "../screens/Pokemon"
 const Stack = createStackNavigator()
 
 export default function FavoriteNavigation() {
@@ -11,6 +11,12 @@ export default function FavoriteNavigation() {
             title: 'Favoritos',
         }
         } />
+        {/*Este stack soluciona el problema de que se volvia hacia atras hacia la pantalla pokedex y no a mi */}
+         {/*/pantalla de favoritos*/}
+        <Stack.Screen name='Pokemon' component={PokemonScreen} options={{
+          title: '',
+          headerTransparent : true,
+        }}/>
     </Stack.Navigator>
 
   )

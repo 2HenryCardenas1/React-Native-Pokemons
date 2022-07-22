@@ -10,7 +10,7 @@ const Tab = createBottomTabNavigator();
 
 function Navigation() {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator initialRouteName="Pokedex">
       <Tab.Screen
         name="Account"
         component={AccountNavigation}
@@ -22,7 +22,6 @@ function Navigation() {
           
         }}
       />
-
       <Tab.Screen
         name="Pokedex"
         component={PokedexNavigation}
